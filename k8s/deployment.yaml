@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment # Kubernetes' resource kind we are creating
+metadata: # Information about application name and label
+  name: boot-k8s
+#  labels: # Labels allow for efficient queries and watches and are ideal for use in UIs and CLIs.
+#    app: backend
+#    environment: dev
+spec:
+  selector: # In general, we expect many objects to carry the same label(s), Via a label selector, the client/user can identify a set of objects.
+    matchLabels:
+      app: boot-k8s
+  replicas: 2 # Number of replicas that will be created for this deployment
+  template: # Template field determines how a pod will be created.
+    metadata:
+      labels:
+        app: boot-k8s
+    spec:
+      containers:
+        - name: boot-k8s
+          image: springboot-k8s:1.0 # Image that will be used to containers in the cluster
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080 # The port that the container is running on in the cluster
