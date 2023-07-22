@@ -1,4 +1,10 @@
-# k8s
+# Kubernetes Tutorial
+
+![1](https://github.com/ksalokya/k8s/assets/72447529/4cab47ee-a834-4c12-856f-df397ae5dc2f)
+
+![2](https://github.com/ksalokya/k8s/assets/72447529/9a832b40-c605-4512-9b49-68c013cd321c)
+
+![3](https://github.com/ksalokya/k8s/assets/72447529/db62e878-25f8-440c-8343-c446c3021d6b)
 
 ## Minikube - [Website](https://minikube.sigs.k8s.io/docs/start/)
 
